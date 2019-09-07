@@ -18,7 +18,7 @@ emitter1.on('error',function(err) {
 });
 
 emitter1.emit('error',new Error('To be handled by listener'));
-emitter1.removeAllListeners('error');
+
 emitter1.emit('error',new Error('To be handled by domain1'));
 
 var domain2 = domain.create();
